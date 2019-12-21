@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {
+    box-sizing: border-box;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+input[type=reset] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=reset]:hover {
+    background-color: #45a049;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Nama Lengkap</label>
+      </div>
+      <div class="col-75">
+        <input type="text" placeholder="Masukan Nama">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Tempat Lahir</label>
+      </div>
+      <div class="col-75">
+        <input type="text" placeholder="tempat lahir">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Tanggal Lahir</label>
+      </div>
+      <div class="col-75">
+        <input type="date" placeholder="">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">No Hp</label>
+      </div>
+      <div class="col-75">
+        <input type="number" placeholder="nomor hp">
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Alamat</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Masukan Alamat" style="height:200px"></textarea>
+      </div>
+    </div>
+    
+
+      <div class="row">
+      <div class="col-25">
+        <label for="country">Pendidikan Terakhir</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="pendidikan">
+          <option value="australia">SMA/SMK/SEDERAJAT</option>
+          <option value="canada">D1</option>
+          <option value="usa">D3</option>
+          <option value="canada">S1</option>
+          <option value="usa">S2</option>
+          <option value="canada">S3</option>
+        </select>
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="col-25">
+        <label for="lname">Agama</label>
+      </div>
+      <div class="col-75">
+        <input type="radio" placeholder="">Islam <br>
+        <input type="radio" placeholder="">Kristen <br>
+        <input type="radio" placeholder="">Katolik <br>
+        <input type="radio" placeholder="">Hindu <br>
+        <input type="radio" placeholder="">Budha <br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Hobi</label>
+      </div>
+      <div class="col-75">
+        <input type="radio" placeholder="">Renanng <br>
+        <input type="radio" placeholder="">Mancing <br>
+        <input type="radio" placeholder="">Gibah <br>
+        <input type="radio" placeholder="">Game <br>
+        <input type="radio" placeholder="">Programming <br>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+       <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </div>
+
+  </form>
+</div>
+
+</body>
+</html>
